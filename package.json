@@ -1,0 +1,26 @@
+{
+  "name": "database-testing2",
+  "version": "1.0.0",
+  "description": "~/workspace/test/jessewarden/database-testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.test.js --exit",
+    "start": "node index.js",
+    "mongod": "mongod --dbpath ~/Documents/data/db",
+    "stopmongod": "mongo admin --eval 'db.shutdownServer()'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mongodb": "^3.5.7",
+    "nodemon": "^2.0.4",
+    "restify": "^8.5.1"
+  }
+}
